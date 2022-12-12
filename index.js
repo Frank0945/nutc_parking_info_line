@@ -4,7 +4,7 @@ const request = require("request");
 const app = express();
 
 app.get('/', (req, res) => {
-    request('https://myip.com.tw/', ((error, response, body) => {
+    request('http://apps.nutc.edu.tw/getParking/showParkingData.php', ((error, response, body) => {
         res.json({ msg: body, error: error, response: response });
     }));
 });
