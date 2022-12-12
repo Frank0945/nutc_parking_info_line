@@ -4,7 +4,9 @@ const request = require("request");
 const app = express();
 
 app.get('/', (req, res) => {
-    res.send("<h1>It's working 🤗</h1>")
+    request('https://myip.com.tw/', ((error, response, body) => {
+        res.json({ msg: body, error: error, response: response });
+    }));
 });
 
 const port = process.env.PORT || 8080
