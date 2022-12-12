@@ -1,0 +1,15 @@
+{
+    "name": "nutc_parking_info_line",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.18.2",
+        "request": "^2.88.2"
+    }
+}

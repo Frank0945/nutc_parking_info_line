@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f79aefb9-6d63-4015-853b-c7d19c64bd8d/AppServices/subscriptions/f79aefb9-6d63-4015-853b-c7d19c64bd8d/resourceGroups/appsvc_linux_centralus/providers/Microsoft.Web/sites/nutcParkingInfo",
+    "appService.deploySubpath": "."
+}
