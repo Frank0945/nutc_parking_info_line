@@ -9,4 +9,4 @@ app.get('/', (req, res) => {
             res.json({ msg: body, error: error, response: response });
         }));
 });
-app.listen(process.env.PORT || 80);
+app.listen(process.env.PORT || 8080);
