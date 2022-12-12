@@ -5,7 +5,7 @@ const app = express();
 
 app.get('/', (req, res) => {
     request(
-        'https://apps.nutc.edu.tw/getParking/showParkingData.php', ((error, response, body) => {
+        'https://www.whatismyip.com.tw/tw/', ((error, response, body) => {
             res.json({ msg: body, error: error, response: response });
         }));
 });
