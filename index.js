@@ -39,12 +39,12 @@ app.get('/', (req, res) => {
             hName = "下午 "
             h -= 12
             if (h < 10) {
-                updateTime = "0" + h + updateTime.drop(2)
+                updateTime = "0" + h + updateTime.slice(2)
             } else {
-                updateTime = h.toString() + updateTime.drop(2)
+                updateTime = h.toString() + updateTime.slice(2)
             }
         } else if (h == 0) {
-            updateTime = "12" + updateTime.drop(2)
+            updateTime = "12" + updateTime.slice(2)
         }
 
         rtnData.updateTime = hName + updateTime;
